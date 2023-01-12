@@ -1,0 +1,144 @@
+﻿@model IEnumerable<SoftTest.Models.PreOrderModel>
+
+<p>
+    <a class="btn btn-warning" asp-action="GetAll">Get ALL</a> 
+</p>
+<div class="text-danger">
+<h3></h3>
+</div>
+<table class="display" id="table_id">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Vender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DeliveryDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Terminate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.quantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Total)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @if(Model != null){
+        @foreach (var item in Model)
+        {
+            var mystyle = "";
+            if(item.Terminate == 'c')
+            {
+                mystyle = "text-danger";
+            }
+            else if (item.Terminate == 'g')
+            {
+                mystyle = "text-success";
+            }
+            else
+            {
+                mystyle = "text-black-50";
+            }
+            <tr id="MyElement" class="@mystyle">
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Vender)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DeliveryDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Terminate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.quantity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                                        <td>
+                        @Html.DisplayFor(modelItem => item.Total)
+                        </td>
+                    @if(item.Terminate=='c'){
+                        <td>
+                        
+                        </td>
+                    }
+                    else if(item.Terminate == 'a'){
+                <td>
+                        
+
+                        @Html.ActionLink("Cancel", "ChangeToCancel", new { @item.Id,item.Terminate},new{@class = "btn btn-danger"})
+                    </td>
+                }
+                else if (item.Terminate == 'o')
+                {
+                        <td>
+                        @Html.ActionLink("Update", "Update",new {item.Id},new{@class = "btn btn-primary"})
+                        @Html.ActionLink("Approval", "ChangeToApproval", new { @item.Id,item.Terminate},new{@class = "btn btn-success"})
+                        @Html.ActionLink("Cancel", "ChangeToCancel", new { @item.Id,item.Terminate},new{@class = "btn btn-danger"})
+                        </td>
+                }
+                else if (item.Terminate == 'g')
+                {
+                                <td>
+
+                        @Html.ActionLink("Cancel", "ChangeToCancel", new { @item.Id,item.Terminate},new{@class = "btn btn-danger"})
+                                </td>
+                }
+                else
+                {
+                    <td>
+
+                @Html.ActionLink("Update", "Update",new {item.Id},new{@class = "btn btn-primary"})
+                @Html.ActionLink("Open", "ChangeToOpen", new { @item.Id,item.Terminate},new{@class = "btn btn-secondary"})
+                @Html.ActionLink("Approval", "ChangeToApproval", new { @item.Id,item.Terminate},new{@class = "btn btn-success"})
+                @Html.ActionLink("Cancel", "ChangeToCancel", new { @item.Id,item.Terminate},new{@class = "btn btn-danger"})
+                    </td>
+                }
+                </tr>
+            }
+
+        }
+    </tbody>
+</table>
+
+@section scripts{
+    <script> 
+            let msg = '@TempData["Message"]';
+
+            if(msg != '')
+            {
+                alert(msg);
+            }
+        $(document).ready( function () {
+        $('#table_id').DataTable();
+    } );
+
+    </script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.js"></script>
+
+}
+
+
+
+

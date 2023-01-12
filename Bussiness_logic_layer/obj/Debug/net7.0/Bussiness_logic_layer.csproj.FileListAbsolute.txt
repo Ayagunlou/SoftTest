@@ -1,0 +1,17 @@
+C:\Users\Raiden\Desktop\test\C#\SoftTest\Bussiness_logic_layer\bin\Debug\net7.0\Bussiness_logic_layer.deps.json
+C:\Users\Raiden\Desktop\test\C#\SoftTest\Bussiness_logic_layer\bin\Debug\net7.0\Bussiness_logic_layer.dll
+C:\Users\Raiden\Desktop\test\C#\SoftTest\Bussiness_logic_layer\bin\Debug\net7.0\Bussiness_logic_layer.pdb
+C:\Users\Raiden\Desktop\test\C#\SoftTest\Bussiness_logic_layer\bin\Debug\net7.0\Data_Access_Layer.dll
+C:\Users\Raiden\Desktop\test\C#\SoftTest\Bussiness_logic_layer\bin\Debug\net7.0\Data_Access_Layer.pdb
+C:\Users\Raiden\Desktop\test\C#\SoftTest\Bussiness_logic_layer\obj\Debug\net7.0\Bussiness_logic_layer.csproj.AssemblyReference.cache
+C:\Users\Raiden\Desktop\test\C#\SoftTest\Bussiness_logic_layer\obj\Debug\net7.0\Bussiness_logic_layer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Raiden\Desktop\test\C#\SoftTest\Bussiness_logic_layer\obj\Debug\net7.0\Bussiness_logic_layer.AssemblyInfoInputs.cache
+C:\Users\Raiden\Desktop\test\C#\SoftTest\Bussiness_logic_layer\obj\Debug\net7.0\Bussiness_logic_layer.AssemblyInfo.cs
+C:\Users\Raiden\Desktop\test\C#\SoftTest\Bussiness_logic_layer\obj\Debug\net7.0\Bussiness_logic_layer.csproj.CoreCompileInputs.cache
+C:\Users\Raiden\Desktop\test\C#\SoftTest\Bussiness_logic_layer\obj\Debug\net7.0\Bussiness_logic_layer.csproj.CopyComplete
+C:\Users\Raiden\Desktop\test\C#\SoftTest\Bussiness_logic_layer\obj\Debug\net7.0\Bussiness_logic_layer.dll
+C:\Users\Raiden\Desktop\test\C#\SoftTest\Bussiness_logic_layer\obj\Debug\net7.0\refint\Bussiness_logic_layer.dll
+C:\Users\Raiden\Desktop\test\C#\SoftTest\Bussiness_logic_layer\obj\Debug\net7.0\Bussiness_logic_layer.pdb
+C:\Users\Raiden\Desktop\test\C#\SoftTest\Bussiness_logic_layer\obj\Debug\net7.0\ref\Bussiness_logic_layer.dll
+C:\Users\Raiden\Desktop\test\C#\SoftTest\Bussiness_logic_layer\bin\Debug\net7.0\Bussiness_logic_layer.runtimeconfig.json
+C:\Users\Raiden\Desktop\test\C#\SoftTest\Bussiness_logic_layer\obj\Debug\net7.0\Bussiness_logic_layer.genruntimeconfig.cache
